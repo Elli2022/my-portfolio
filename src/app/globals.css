@@ -77,3 +77,46 @@ p {
 .learn-more-btn:hover {
   background-color: #0056b3;
 }
+
+
+.navbar-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+
+.navbar-container a {
+  /* Grundläggande styling */
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.navbar-container a:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+nav {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-container {
+  background: /* Din färg eller textur */;
+}

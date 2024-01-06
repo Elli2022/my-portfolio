@@ -2,23 +2,17 @@
 import React from "react";
 import Link from "next/link";
 
-function Navbar() {
+const Navbar = () => {
   return (
-    <nav className="navbar">
-      {/* <Link to="/" className="nav-link">
-        Hem
-      </Link>
-      <Link to="/about" className="nav-link">
-        Om Mig
-      </Link>
-      <Link to="/projects" className="nav-link">
-        Projekt
-      </Link>
-      <Link to="/contact" className="nav-link">
-        Kontakt
-      </Link> */}
+    <nav>
+      <div className="navbar-container">
+        <Link href="/">Home</Link>
+        <Link href="/about">About</Link>
+        <Link href="/projects">Projects</Link>
+        <Link href="/contact">Contact</Link>
+      </div>
     </nav>
   );
-}
+};
 
 export default Navbar;

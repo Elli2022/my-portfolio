@@ -1,9 +1,11 @@
 import Image from "next/image";
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 function Home() {
   return (
     <>
+      <Navbar />
       <div className="home">
         <h1>Välkommen till Min Portfölj</h1>
         <p>
