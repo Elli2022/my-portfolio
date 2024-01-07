@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 function Home() {
   return (
     <>
-      <div className="min-h-screen bg-gradient-to-r from-orange-500 to-purple-500">
+      <div className="min-h-screen min-h-screen animated-gradient">
         <Navbar />
         <div className="home">
           <h1>Välkommen till Min Portfölj</h1>
