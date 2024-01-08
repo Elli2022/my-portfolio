@@ -1,0 +1,25 @@
+/* src/app/components/ElasticCustomCursor/ElasticCustomCursor.module.css */
+
+
+  
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 4rem;
+  height: 4rem;
+  pointer-events: none;
+  z-index: 10000;
+}
+
+.cursorCircle {
+  --circle-size: 40px;
+  position: absolute;
+  height: var(--circle-size);
+  width: var(--circle-size);
+  border: 1px solid white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}

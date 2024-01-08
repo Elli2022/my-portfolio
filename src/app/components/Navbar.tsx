@@ -22,7 +22,7 @@ const Navbar = () => {
         <span></span>
         <span></span>
       </div>
-      <div className={`navbar-container ${isOpen ? "active" : ""}`}>
+      <div className={`navbar-container bg-transparent ${isOpen ? "active" : ""}`}>
         <Link href="/" onClick={() => setIsOpen(false)}>
           Home
         </Link>

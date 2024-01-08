@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar";
 function Home() {
   return (
     <>
+    
+    <main className="home min-h-screen min-h-screen animated-gradient">
       <div className="min-h-screen min-h-screen animated-gradient">
         <Navbar />
         <div className="home">
@@ -34,6 +36,7 @@ function Home() {
         </div>
         <Footer />
       </div>
+      </main>
     </>
   );
 }
