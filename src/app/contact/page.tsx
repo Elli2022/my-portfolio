@@ -11,7 +11,7 @@ const ContactPage = () => {
     <Modal>
       <div className="min-h-screen bg-[#1E415B] text-white flex flex-col justify-center">
         <div className="container mx-auto px-4">
-          {/* Flyttad Portfolio-länk här */}
+          {/* Home-link */}
           <div className="absolute top-10 left-14 text-white text-4xl">
             <Link href="/home" className="text-white font-bold text-lg">
               Portfolio.
@@ -93,7 +93,7 @@ const ContactPage = () => {
                       href="mailto:my@gmail.com"
                       className="text-blue-500 font-bold"
                     >
-                      my@gmail.com
+                      eleonora.nocentini@gmail.com
                     </a>
                   </p>
                   <p className="mt-12">
@@ -102,7 +102,7 @@ const ContactPage = () => {
                       href="tel:+1-402-4983"
                       className="text-blue-500 font-bold"
                     >
-                      +1-402-4983
+                      +46724272912
                     </a>
                   </p>
                 </div>
