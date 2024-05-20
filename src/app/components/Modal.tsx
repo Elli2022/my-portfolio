@@ -1,3 +1,4 @@
+// src/app/components/Modal.tsx
 "use client";
 
 import { MouseEventHandler, useCallback, useEffect, useRef } from "react";
@@ -37,13 +38,13 @@ export default function Modal({ children }: { children: React.ReactNode }) {
   return (
     <div
       ref={overlay}
-      className="fixed inset-0 z-10 bg-black/60"
+      className="fixed inset-0 z-10 bg-black/60 flex items-center justify-center"
       onClick={onClick}
     >
-      <div ref={wrapper} className="relative p-6 mx-auto w-full h-full ">
+      <div ref={wrapper} className="relative bg-white rounded-lg shadow-lg max-w-2xl w-full mx-4 p-6">
         <button
           onClick={onDismiss}
-          className="absolute top-10 right-14 text-white text-4xl"
+          className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl"
           aria-label="Close"
         >
           &times;
