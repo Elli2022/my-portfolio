@@ -4,6 +4,18 @@ import Image from 'next/image';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
+const projects = [
+  {
+    img: "/images/advokatbyra.png",
+    title: "Advokatbyrå",
+    description: "A professional website for a law firm.",
+    tech_stack: ["HTML", "CSS", "JavaScript", "React"],
+    github_url: "https://github.com/username/advokatbyra",
+    demo_url: "https://advokatbyra.netlify.app/"
+  },
+  // Lägg till fler projekt här
+];
+
 const ProjectsPage = () => {
   return (
     <>
@@ -20,26 +32,52 @@ const ProjectsPage = () => {
         <div className="container mx-auto px-4 py-16">
           <h1 className="text-5xl font-extrabold mb-16 text-center text-gray-800 dark:text-white">My Projects</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-            <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
-              <div className="relative overflow-hidden rounded-lg mb-6">
-                <Image 
-                  src="/images/advokatbyra.png"
-                  alt="Advokatbyrå Project"
-                  width={600}
-                  height={400}
-                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
-                <div className="absolute bottom-4 left-4 text-white z-10">
-                  <h2 className="text-3xl font-bold">Advokatbyrå</h2>
-                  <p className="mt-1">A professional website for a law firm.</p>
+            {projects.map((project, index) => (
+              <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <div className="relative overflow-hidden rounded-lg mb-6">
+                  <Image 
+                    src={project.img}
+                    alt={project.title}
+                    width={600}
+                    height={400}
+                    className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div>
+                  <h2 className="text-3xl font-bold text-gray-800 dark:text-white">{project.title}</h2>
+                  <p className="mt-1 text-gray-600 dark:text-gray-300">{project.description}</p>
+                  <div className="flex flex-wrap mt-4">
+                    {project.tech_stack.map((tech, index) => (
+                      <span key={index} className="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white py-1 px-3 rounded-full mr-2 mb-2">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="flex mt-4">
+                    {project.github_url && (
+                      <a
+                        className="btn SecondaryBtn btn-shadow bg-gray-800 text-white py-2 px-4 rounded-full mr-2"
+                        href={project.github_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Github
+                      </a>
+                    )}
+                    {project.demo_url && (
+                      <a
+                        className="btn PrimaryBtn btn-shadow bg-blue-600 text-white py-2 px-4 rounded-full"
+                        href={project.demo_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Demo ➜
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
-              <a href="https://advokatbyra.netlify.app/" target="_blank" rel="noopener noreferrer" className="block bg-blue-600 text-white text-center py-3 rounded-full hover:bg-blue-700 transition-colors duration-300">
-                View Project
-              </a>
-            </div>
-            {/* Lägg till fler projekt här */}
+            ))}
           </div>
         </div>
         <Footer />
