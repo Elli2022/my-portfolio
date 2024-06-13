@@ -13,7 +13,14 @@ const projects = [
     github_url: "https://github.com/username/advokatbyra",
     demo_url: "https://advokatbyra.netlify.app/"
   },
-  // Lägg till fler projekt här
+  {
+    img: "/images/calculator.png",
+    title: "Calculator",
+    description: "Simple Calculator",
+    tech_stack: ["HTML", "CSS", "Typescript"],
+    github_url: "https://github.com/Elli2022/Elli2022-FE22-js2-mp4-eleonora-nocentini",
+    demo_url: "https://easytypescriptcalculus.netlify.app/"
+  },
 ];
 
 const ProjectsPage = () => {
