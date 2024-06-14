@@ -21,6 +21,14 @@ const projects = [
     github_url: "https://github.com/Elli2022/Elli2022-FE22-js2-mp4-eleonora-nocentini",
     demo_url: "https://easytypescriptcalculus.netlify.app/"
   },
+  {
+    img: "/images/pokemon.png",
+    title: "Pokémon API",
+    description: "Catch'em All with Pokémon API",
+    tech_stack: ["HTML", "CSS", "Javascript"],
+    github_url: "https://github.com/Elli2022/catchem-all-pokemon",
+    demo_url: "https://pokemincatchthemall.netlify.app"
+  },
 ];
 
 const ProjectsPage = () => {
