@@ -29,6 +29,14 @@ const projects = [
     github_url: "https://github.com/Elli2022/catchem-all-pokemon",
     demo_url: "https://pokemincatchthemall.netlify.app"
   },
+  {
+    img: "/images/highStDeliAndMarket.png",
+    title: "High St",
+    description: "High St Market & Deli",
+    tech_stack: ["HTML", "Tailwind"],
+    github_url: "https://github.com/Elli2022/FE22-html-mp2-Eleonora-Nocentini-Skoldebrink",
+    demo_url: "https://highstdeli.netlify.app/"
+  },
 ];
 
 const ProjectsPage = () => {
